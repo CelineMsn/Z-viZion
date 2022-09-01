@@ -845,12 +845,10 @@ a .hyperlink:hover {
 .cardo-img {
   display: block;
   width: 90%;
-  height: auto;
+  max-height: fit-content;
   margin: auto;
   border-radius: 16px;
   border: solid 2px #fff;
-  object-fit:contain;
- 
 }
 
 .cardo__face--back {
