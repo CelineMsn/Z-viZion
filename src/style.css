@@ -798,7 +798,7 @@ a .hyperlink:hover {
 .cardo {
   margin: 40px auto; 
   width: 370px;
-  height: 450px;
+  height: 470px;
   perspective: 1000px;
 }
 
@@ -849,6 +849,8 @@ a .hyperlink:hover {
   margin: auto;
   border-radius: 16px;
   border: solid 2px #fff;
+  object-fit:contain;
+ 
 }
 
 .cardo__face--back {
