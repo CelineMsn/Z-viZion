@@ -829,11 +829,9 @@ a .hyperlink:hover {
 }
 
 .cardo__face--front {
-  
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .cardo__face--front h2 {
