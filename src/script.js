@@ -1,3 +1,9 @@
+const card = document.querySelector(".cardo__inner");
+
+card.addEventListener("click", function (e) {
+  card.classList.toggle("is-flipped");
+});
+
 function alertMessage(event) {
   event.preventDefault();
   let name = document.querySelector("#name").value;
@@ -17,4 +23,3 @@ document.querySelector("#send-mail").addEventListener("submit", alertMessage);
 function sendMail(event) {
   mailTo;
 }
-

@@ -4,6 +4,8 @@
   --dark-shadow: #212529;
   --modern-purple: #630dc2;
   --modern-pink: #da0e9b;
+  --dark: #212121;
+  --light: #F3F3F3;
   --gradient: linear-gradient(
     68.6deg,
     var(--modern-pink),
@@ -17,6 +19,13 @@
   --shadow: 5px 5px 8px rgba(109, 109, 109, 0.247);
   --shadow-2: 2px 2px 8px rgba(25, 25, 25, 0.295);
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: var(--main-font);
 }
@@ -787,3 +796,129 @@ a .hyperlink:hover {
 }
 
 
+.cardo {
+  margin: 100px auto 0;
+  width: 500px;
+  height: 500px;
+ perspective: 1000px;
+}
+
+.cardo__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.cardo__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+
+.cardo__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.3);
+}
+
+.cardo__face--front {
+  background-image: linear-gradient(to bottom right,var(--modern-pink) 0%, var(--modern-purple)100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cardo__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+  
+}
+
+.cardo__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.cardo__content {
+  width: 100%;
+  height: 100%;
+}
+
+.cardo__header {
+  position: relative;
+  padding: 30px 30px 40px;
+}
+
+.cardo__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+  border-radius: 0px 0px 50% 0px;
+}
+
+.cardo-img {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 5px solid #FFF;
+  object-fit: cover;
+}
+
+.cardo-btn {
+  padding: 15px 20px;
+  margin: 0px auto;
+  background: var(--modern-purple);
+  opacity: 1;
+  color: white;
+  transition: all 200ms ease-in-out;
+  border-radius: 10px;
+  max-width: 150px;
+  display: flex;
+  text-align: center;
+}
+.cardo-btn:hover {
+  opacity: 0.8;
+  background: var(--modern-purple);
+  color: white;
+  border-radius: 10px;
+}
+
+.cardo__header h2 {
+  color: var(--modern-pink);
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cardo__body {
+  padding: 30px;
+}
+
+.cardo__body h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cardo__body p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.4;
+}
