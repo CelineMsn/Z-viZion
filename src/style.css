@@ -797,9 +797,9 @@ a .hyperlink:hover {
 
 
 .cardo {
-  margin: 100px auto 0;
-  width: 500px;
-  height: 500px;
+  margin: 40px auto;
+  width: 380px;
+  height: 380px;
  perspective: 1000px;
 }
 
@@ -854,7 +854,7 @@ a .hyperlink:hover {
 
 .cardo__header {
   position: relative;
-  padding: 30px 30px 40px;
+  padding: 20px 10px 20px;
 }
 
 .cardo__header:after {
@@ -872,8 +872,8 @@ a .hyperlink:hover {
 
 .cardo-img {
   display: block;
-  width: 400px;
-  height: 400px;
+  width: 90%;
+  height: 90%;
   margin: 0 auto;
   border: 5px solid #FFF;
   object-fit: cover;
@@ -887,7 +887,7 @@ a .hyperlink:hover {
   color: white;
   transition: all 200ms ease-in-out;
   border-radius: 10px;
-  max-width: 150px;
+  max-width: 30%;
   display: flex;
   text-align: center;
 }
@@ -900,7 +900,7 @@ a .hyperlink:hover {
 
 .cardo__header h2 {
   color: var(--modern-pink);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -912,13 +912,15 @@ a .hyperlink:hover {
 
 .cardo__body h3 {
   color: var(--dark);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .cardo__body p {
   color: var(--dark);
   font-size: 18px;
   line-height: 1.4;
+  text-align: center;
 }
