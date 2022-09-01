@@ -825,7 +825,7 @@ a .hyperlink:hover {
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to top left,var(--modern-pink) 0%, var(--modern-purple)80%);
+  background-image: linear-gradient(to bottom right, #000 0%, var(--dark-shadow)100%);
 }
 
 .cardo__face--front {
@@ -835,7 +835,7 @@ a .hyperlink:hover {
 }
 
 .cardo__face--front h2 {
-  color: #FFF;
+  color: rgb(130, 63, 181);
   font-size: 30px;
   
 }
@@ -864,18 +864,6 @@ a .hyperlink:hover {
   padding: 20px 10px 20px;
 }
 
-.cardo__header:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-  z-index: -1;
-  border-radius: 0px 0px 50% 0px;
-}
 
 .cardo-btn {
   padding: 15px 20px;
