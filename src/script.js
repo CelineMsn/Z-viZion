@@ -1,5 +1,6 @@
-const card = document.querySelector(".cardo__inner");
-
-card.addEventListener("click", function (e) {
-  card.classList.toggle("is-flipped");
-});
+var cards = document.querySelectorAll(".cardo__inner");
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("click", function (e) {
+    cards[i].classList.toggle("is-flipped");
+  });
+}
