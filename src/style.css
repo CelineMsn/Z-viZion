@@ -866,14 +866,14 @@ a .hyperlink:hover {
 
 
 .cardo-btn {
-  padding: 15px 20px;
-  margin: 30px auto;
+  padding: 10px 20px;
+  margin: 15px auto;
   background: var(--modern-purple);
   opacity: 1;
   color: white;
   transition: all 200ms ease-in-out;
   border-radius: 10px;
-  max-width: 45%;
+  max-width: 50%;
   display: flex;
   text-align: center;
 }
