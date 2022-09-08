@@ -291,8 +291,6 @@ font-family: IBM Plex Mono, monospace;
 .type {
   display:inline-block;
   font-size: 35px;
-
-
 }
 .type > span {
   justify-content: center;
@@ -326,7 +324,9 @@ font-family: IBM Plex Mono, monospace;
   100% {transform:translateY(-300%)}
 }
 
-
+.pink{
+  color: #da0e9b;
+}
 .centrer{
   text-align: center;
   margin-top: 10px;
