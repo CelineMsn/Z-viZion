@@ -118,6 +118,11 @@ h7 {
   font-size: 18px;
   font-weight: 200;
 }
+h8 {
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+}
 h9 {
   color: white;
   font-size: 15px;
@@ -911,4 +916,8 @@ a .hyperlink:hover {
   line-height: 1.4;
   text-align: center;
   margin: 20px;
+}
+
+.contact-label {
+  color: #010300;
 }
