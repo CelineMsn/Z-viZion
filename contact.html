@@ -101,7 +101,7 @@
 <section class="mb-4 mt-5">
     <div class="row">
         <!--Grid column-->
-            <form id="contact-form" action="mail.php" method="post" enctype="text/plain" name="ContactForm">
+            <form onsubmit="sendEmail (); reset(); return false;" id="contact-form" action="mail.php" method="post" enctype="text/plain" name="ContactForm">
                 <!--Grid row-->
                 <div class="row">
                     <!--Grid column-->
@@ -137,7 +137,7 @@
                     <!--Grid column-->
                     <div class="col-md-12">
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message" class="contact-label mb-2 mt-2">Message</label>
                         </div>
                     </div>
@@ -299,5 +299,24 @@
  </footer>
 
    <script src="/src/script.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   <script>
+function sendEmail () {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "c.zvizion@gmail.com",
+    Password: "Maxine452zv!",
+    To: "c.zvizion@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "zviZion - New contact form Enquiry",
+    Body: "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br< Subject: " + document.getElementById("subject").value
+  }).then(
+    (message) => alert("Message Sent Succesfully")
+    );
+}
+</script>;
+
   </body>
 </html>

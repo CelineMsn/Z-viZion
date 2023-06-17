@@ -38,7 +38,16 @@ h1 span {
   position: relative;
   display: inline-block;
 }
-
+/*
+h1 span,
+.type span,
+h4 span {
+  color: var(--modern-pink);
+}
+*/
+span {
+  color: var(--modern-pink);
+}
 h1 span:nth-child(3){
   color:#fff;
   animation: animate 2.5s alternate infinite;
@@ -132,9 +141,6 @@ h10 {
   color: white;
   padding: 0px 0;
   font-size: 40px;
-}
-span {
-  color: var(--modern-pink);
 }
 hr:not([size]) {
   height: 2px;
