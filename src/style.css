@@ -5,13 +5,13 @@
   --modern-purple: #630dc2;
   --modern-pink: #da0e9b;
   --dark: #212121;
-  --light: #F3F3F3;
+  --light: #f3f3f3;
   --gradient: linear-gradient(
     68.6deg,
     var(--modern-pink),
     var(--modern-purple)
   );
-   --gradient2: linear-gradient(
+  --gradient2: linear-gradient(
     68.6deg,
     var(--modern-purple),
     var(--modern-pink)
@@ -19,7 +19,6 @@
   --shadow: 5px 5px 8px rgba(109, 109, 109, 0.247);
   --shadow-2: 2px 2px 8px rgba(25, 25, 25, 0.295);
 }
-
 
 * {
   margin: 0;
@@ -48,56 +47,52 @@ h4 span {
 span {
   color: var(--modern-pink);
 }
-h1 span:nth-child(3){
-  color:#fff;
+h1 span:nth-child(3) {
+  color: #fff;
   animation: animate 2.5s alternate infinite;
 }
 
-
-h1 span:nth-child(5){
-  color:#fff;
+h1 span:nth-child(5) {
+  color: #fff;
   animation: animate 3.5s alternate infinite;
-  animation-delay: 0.7s ;
+  animation-delay: 0.7s;
 }
 
-@keyframes animate
-{
-  0%{
+@keyframes animate {
+  0% {
     transform: translateY(0px) rotate(0deg);
   }
-  25%{
+  25% {
     transform: translateY(0px) rotate(90deg);
-  } 
-  50%{
+  }
+  50% {
     transform: translateY(-35px) rotate(180deg);
-  } 
-  75%{
-    transform: translateY(0px) ;
-  } 
-  100%{
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
     transform: translateY(0px) rotate(360deg);
   }
-
-
 }
 
-h1:hover span{
+h1:hover span {
   animation: animate 3s alternate infinite;
 }
 
-h1 span:nth-child(1){
+h1 span:nth-child(1) {
   animation-delay: 0s;
 }
-h1 span:nth-child(2){
+h1 span:nth-child(2) {
   animation-delay: 0.2s;
 }
-h1 span:nth-child(4){
+h1 span:nth-child(4) {
   animation-delay: 0.6s;
 }
-h1 span:nth-child(5){
+h1 span:nth-child(5) {
   animation-delay: 0.1s;
 }
-h1 span:nth-child(6){
+h1 span:nth-child(6) {
   animation-delay: 0.5s;
 }
 
@@ -195,69 +190,69 @@ a:hover {
   background: black;
   padding: 0;
 }
-.logo-z-losange{
+.logo-z-losange {
   display: block;
   text-align: center;
-  background-color: #F8F8F8 ;
+  background-color: #f8f8f8;
 }
 
-.typewriter-body  p {
-color: #fff;
-font-family: IBM Plex Mono, monospace;
+.typewriter-body p {
+  color: #fff;
+  font-family: IBM Plex Mono, monospace;
 }
 .typewriter-container {
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
 
 .typewriter p {
-    font-size: 45px;
-    font-weight: lighter;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    animation: typing 5s steps(37) infinite;
-    text-transform: uppercase;
+  font-size: 45px;
+  font-weight: lighter;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typing 5s steps(37) infinite;
+  text-transform: uppercase;
 }
 .typewriter p::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 1px;
-    background: #dadada;
-    right: 0;
-    bottom: 0;
-    animation: cursor 1s infinite;
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #dadada;
+  right: 0;
+  bottom: 0;
+  animation: cursor 1s infinite;
 }
 
 .typewriter-portfolio p {
-    font-size: 45px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    animation: typing 4s steps(10) infinite;
-    text-transform: uppercase;
+  font-size: 45px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  animation: typing 4s steps(10) infinite;
+  text-transform: uppercase;
 }
 .typewriter-portfolio p::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 1px;
-    background: #dadada;
-    right: 0;
-    bottom: 0;
-    animation: cursor 0.5s infinite;
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #dadada;
+  right: 0;
+  bottom: 0;
+  animation: cursor 0.5s infinite;
 }
 
 .typewriter-container-home {
-    display: flex;
-    justify-content:left;
-    padding-bottom: -20px;
+  display: flex;
+  justify-content: left;
+  padding-bottom: -20px;
 }
 .typewriter-home h1 {
   font-family: IBM Plex Mono, monospace;
@@ -270,75 +265,86 @@ font-family: IBM Plex Mono, monospace;
   text-transform: uppercase;
 }
 .typewriter-home h1::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 1px;
-    background: #dadada;
-    right: 0;
-    bottom: 0;
-    animation: cursor 1s infinite;
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 1px;
+  background: #dadada;
+  right: 0;
+  bottom: 0;
+  animation: cursor 1s infinite;
 }
 
 @keyframes typing {
-    from {width:0}
-    to {width: 100%;}
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes cursor {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
 .type {
-  display:inline-block;
+  display: inline-block;
   font-size: 35px;
 }
 .type > span {
   justify-content: center;
-  display:grid;
+  display: grid;
   overflow: hidden;
-  height:1.2em;
+  height: 1.2em;
 }
 .type span span {
-  width:0%;
-  max-width:max-content;
+  width: 0%;
+  max-width: max-content;
   overflow: hidden;
-  height:inherit;
-  word-break:break-all;
-  animation:
-    c 0.5s infinite steps(1),  
-    t 2s linear infinite alternate,
+  height: inherit;
+  word-break: break-all;
+  animation: c 0.5s infinite steps(1), t 2s linear infinite alternate,
     m 12s steps(3) infinite;
 }
 .type span span:before {
-  content:" ";
-  display:inline-block;
+  content: " ";
+  display: inline-block;
 }
-@keyframes t{
-  90%,100% {width:100%}
+@keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
 }
-@keyframes c{
-  0%,100%{box-shadow:2px 0 0 #0000}
-  50%    {box-shadow:2px 0 0 #fff }
+@keyframes c {
+  0%,
+  100% {
+    box-shadow: 2px 0 0 #0000;
+  }
+  50% {
+    box-shadow: 2px 0 0 #fff;
+  }
 }
-@keyframes m{
-  100% {transform:translateY(-300%)}
+@keyframes m {
+  100% {
+    transform: translateY(-300%);
+  }
 }
 
-.pink{
+.pink {
   color: #da0e9b;
 }
-.centrer{
+.centrer {
   text-align: center;
   margin-top: 10px;
 }
@@ -364,14 +370,12 @@ font-family: IBM Plex Mono, monospace;
 .content-container {
   background: var(--secondary-colour);
   padding: 40px 0 0;
-  z-index:50;
-
+  z-index: 50;
 }
 
 .content-container h4 {
   padding: 60px 0;
   font-size: 30px;
-  
 }
 .about-container {
   margin-top: 20px;
@@ -383,18 +387,15 @@ font-family: IBM Plex Mono, monospace;
   transition: ease-in-out all 150ms;
   box-shadow: var(--shadow);
   border-radius: 4px;
-  
 }
 .values-container {
   margin-top: 20px;
   background: white;
   transition: all 150ms ease-in-out;
- 
 }
 .content-values-container {
   background: var(--secondary-colour);
   padding: 40px 0 0;
- 
 }
 .values-container .content-container {
   transition: ease-in-out all 150ms;
@@ -411,9 +412,9 @@ font-family: IBM Plex Mono, monospace;
   background: var(--gradient2);
 }
 
-.values-container .content-container:hover{
+.values-container .content-container:hover {
   color: white;
-  background: var(--gradient);-
+  background: var(--gradient);
 }
 
 .tile {
@@ -676,7 +677,6 @@ a .hyperlink:hover {
   padding: 0;
 }
 
-
 @media (max-width: 1150px) {
   h1 {
     font-size: 55px;
@@ -707,15 +707,14 @@ a .hyperlink:hover {
     padding: 0;
     text-align: center;
   }
-.typewriter p {
+  .typewriter p {
     font-size: 30px;
     font-weight: lighter;
     overflow: hidden;
     position: relative;
     animation: typing 4s steps(26) infinite;
     text-transform: uppercase;
-   
-}
+  }
 }
 
 @media (max-width: 576px) {
@@ -739,31 +738,31 @@ a .hyperlink:hover {
     text-align: center;
     max-width: fit-content;
   }
-.typewriter p {
+  .typewriter p {
     font-size: 20px;
     font-weight: lighter;
     overflow: hidden;
     position: relative;
     animation: typing 4s steps(26) infinite;
-    text-transform: uppercase;  
-}
-    .typewriter-home h1 {
+    text-transform: uppercase;
+  }
+  .typewriter-home h1 {
     font-size: 40px;
-}
+  }
 
-.typewriter-container-home {
-    justify-content:center;
-}
-.logo-z-losange img{
-  max-width: 100%;
-}
-.about-icons img{
-   max-width: 100%;
-   padding: 0;
-}
+  .typewriter-container-home {
+    justify-content: center;
+  }
+  .logo-z-losange img {
+    max-width: 100%;
+  }
+  .about-icons img {
+    max-width: 100%;
+    padding: 0;
+  }
 
-.contact-card h6,
-.contact-card a {
+  .contact-card h6,
+  .contact-card a {
     display: block;
     text-align: center;
   }
@@ -807,7 +806,7 @@ a .hyperlink:hover {
 }
 
 .cardo {
-  margin: 40px auto; 
+  margin: 40px auto;
   width: 370px;
   height: 470px;
   perspective: 1000px;
@@ -826,7 +825,6 @@ a .hyperlink:hover {
   transform: rotateY(180deg);
 }
 
-
 .cardo__face {
   position: absolute;
   width: 100%;
@@ -836,7 +834,11 @@ a .hyperlink:hover {
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 1) 45%, rgb(218, 15, 155,1)100%);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0, 1) 45%,
+    rgb(218, 15, 155, 1) 100%
+  );
 }
 
 .cardo__face--front {
@@ -848,7 +850,6 @@ a .hyperlink:hover {
 .cardo__face--front h2 {
   color: rgb(130, 63, 181);
   font-size: 30px;
-  
 }
 
 .cardo-img {
@@ -874,7 +875,6 @@ a .hyperlink:hover {
   position: relative;
   padding: 20px 10px 20px;
 }
-
 
 .cardo-btn {
   padding: 10px 20px;
