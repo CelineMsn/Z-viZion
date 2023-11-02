@@ -99,57 +99,19 @@
                   Do not hesitate to use the form if you have other request or question.</h8>
             
 <section class="mb-4 mt-5">
-    <div class="row">
-        <!--Grid column-->
-            <form onsubmit="sendEmail (); reset(); return false;" id="contact-form" action="mail.php" method="post" enctype="text/plain" name="ContactForm">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="contact-label mb-2 mt-2">Name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="contact-label mb-2 mt-2">Email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="contact-label mb-2 mt-2">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <textarea id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message" class="contact-label mb-2 mt-2">Message</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-            <div class="text-center text-md-left ">
-               <button type="submit" class="btn mt-3">SEND</button>
+            <div class="form">
+                  <form action="https://formsubmit.co/b2f1d5116b5b8ea65e204d64e4d3dbcf" method="POST">
+                     <label for="name" class="contact-label mb-2 mt-2">Name</label>
+                     <input type="text" name="name" placeholder="Write your full name">
+                     <label for="email" class="contact-label mb-2 mt-2">Email</label>
+                    <input type="email" name="email" placeholder="Enter your Email Address" required>
+                    <input type="hidden" name="_subject" placeholder="Subject" value="New form from Actionable Ideas!">
+                      <label for="message" class="contact-label mb-2 mt-2">Message</label>
+                   <input type="hidden" name="message" rows="4" placeholder="How can we help you?">
+                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" class="form-control md-textarea" required></textarea> 
+                    <button type="submit">Send</button>
+                  </form>
             </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-</form>
 </section>
 <!--Section   
                 <div class="contact-form mt-4">
